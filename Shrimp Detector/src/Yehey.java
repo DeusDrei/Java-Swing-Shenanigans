@@ -12,7 +12,7 @@ public class Yehey{
         JFrame frame = new JFrame();
         JLabel label = new JLabel();
 
-        ImageIcon imageIcon = new ImageIcon("../assets/thumbs_up.png");
+        ImageIcon imageIcon = new ImageIcon("assets/thumbs_up.png");
         Image image = imageIcon.getImage(); 
         Image newimg = image.getScaledInstance(1450, 750,  java.awt.Image.SCALE_SMOOTH);
         imageIcon = new ImageIcon(newimg);
@@ -28,7 +28,7 @@ public class Yehey{
         frame.setVisible(true);
         frame.add(label);
 
-        play("../assets/yehey.wav");
+        play("assets/yehey.wav");
         
     }
     public static void play(String filename){

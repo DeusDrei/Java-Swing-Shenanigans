@@ -12,7 +12,7 @@ public class Whale{
         JFrame frame = new JFrame();
         JLabel label = new JLabel();
 
-        ImageIcon imageIcon = new ImageIcon("../assets/whale_point.png");
+        ImageIcon imageIcon = new ImageIcon("assets/whale_point.png");
         Image image = imageIcon.getImage(); 
         Image newimg = image.getScaledInstance(1450, 750,  java.awt.Image.SCALE_SMOOTH);
         imageIcon = new ImageIcon(newimg);
@@ -28,7 +28,7 @@ public class Whale{
         frame.setVisible(true);
         frame.add(label);
 
-        play("../assets/cat_laughing.wav");
+        play("assets/cat_laughing.wav");
         
     }
     public static void play(String filename){
